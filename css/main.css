@@ -214,7 +214,8 @@ main{
   padding-bottom: 50px;
 }
 #community .inner {
-  gap: 50px;
+  row-gap: 50px;
+  column-gap: 20px;
   width: 85%;
 }
 #community .inner > *{
