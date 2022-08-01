@@ -9,6 +9,10 @@
         display: none;
     }
     /* 타이틀 */
+    #title{
+        min-height: 36.45833333333333vw;
+        height: 100vw;
+    }
     #title::before{
         width: 78.54166666666667vw;
         height: 20.20833333333333vw;
