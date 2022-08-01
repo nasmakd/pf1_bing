@@ -1,5 +1,17 @@
-@media screen and (max-width: 768px){/* max-width 이하 */
+@media screen and (max-width: 768px){/* max-width 이하 미디어 쿼리 */
+    /* header::before{
+        display: none;
+    } */
     header div.inner ul.gnb{
-        
+        display: none;
+    }
+    header div.inner ul.tnb{
+        display: none;
+    }
+    /* 타이틀 */
+    #title::before{
+        width: 78.54166666666667vw;
+        height: 20.20833333333333vw;
+        margin-top: 3.125vw;
     }
 }
