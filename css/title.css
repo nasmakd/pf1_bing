@@ -114,11 +114,9 @@
 
 }
 #title ul.hash {
-
   display: flex;
   margin-top: 30px;
-  gap: 20px;
-  column-gap: 40px;
+  gap: 30px;
 }
 #title ul.hash li {
 
