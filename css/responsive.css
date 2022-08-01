@@ -32,6 +32,13 @@
     #taste div.inner ul.list li{
         width: calc((100% / 2) - (20px / 2));
     }
+
+    #shop::before{
+        display: none;
+    }
+    #shop .inner ul.list{
+        flex-wrap: wrap;
+    }
     #shop .inner ul.list li{
         width: calc((100% / 2) - (20px / 2));
     }
