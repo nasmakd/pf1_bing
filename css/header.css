@@ -59,7 +59,7 @@ header div.inner ul.gnb::before{
   box-shadow: 0 10px 10px rgba(173, 173, 173, 0.2)
 }
 header div.inner ul.gnb:hover::before{
-  height: 450px;
+  height: 480px;
 }
 header div.inner ul.gnb::after{
   content: "";
