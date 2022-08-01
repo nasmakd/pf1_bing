@@ -1,3 +1,54 @@
+
+@media screen and (max-width: 1200px) {
+    header div.inner{
+        flex-wrap: wrap;
+    }
+    header div.inner h1{
+        order: 1;
+    }
+    header div.inner ul.gnb{
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+    header div.inner ul.enb{
+        order: 2;
+    }
+    /* 타이틀 */
+    #title{
+        min-height: 36.45833333333333vw;
+        height: 100vw;
+    }
+    #title::before{
+        width: 78.54166666666667vw;
+        height: 20.20833333333333vw;
+        margin-top: 3.125vw;
+    }
+    #title form.search{
+        width: 36.4583vw;
+        min-width: 600px;
+    }
+    #title ul.hash{
+        column-gap: 10px;
+    }
+
+    /* 빙그레 맛 */
+    #shop .inner ul.list{
+        flex-wrap: wrap;
+    }
+    #taste div.inner ul.list li{
+        width: calc((100% / 3) - (40px / 3));
+    }
+    #shop::before{
+        display: none;
+    }
+    
+    #shop .inner ul.list li{
+        width: calc((100% / 3) - (40px / 3));
+    }
+
+}
+
 @media screen and (max-width: 768px){/* max-width 이하 미디어 쿼리 */
     /* header::before{
         display: none;
@@ -88,54 +139,3 @@
         height: 50px;
     }
 }
-@media screen and (max-width: 1200px) {
-    header div.inner{
-        flex-wrap: wrap;
-    }
-    header div.inner h1{
-        order: 1;
-    }
-    header div.inner ul.gnb{
-        order: 3;
-        width: 100%;
-        justify-content: center;
-    }
-    header div.inner ul.enb{
-        order: 2;
-    }
-    /* 타이틀 */
-    #title{
-        min-height: 36.45833333333333vw;
-        height: 100vw;
-    }
-    #title::before{
-        width: 78.54166666666667vw;
-        height: 20.20833333333333vw;
-        margin-top: 3.125vw;
-    }
-    #title form.search{
-        width: 36.4583vw;
-        min-width: 600px;
-    }
-    #title ul.hash{
-        column-gap: 10px;
-    }
-
-    /* 빙그레 맛 */
-    #shop .inner ul.list{
-        flex-wrap: wrap;
-    }
-    #taste div.inner ul.list li{
-        width: calc((100% / 3) - (40px / 3));
-    }
-    #shop::before{
-        display: none;
-    }
-    
-    #shop .inner ul.list li{
-        width: calc((100% / 3) - (40px / 3));
-    }
-
-}
-
-
