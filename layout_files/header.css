@@ -1,0 +1,121 @@
+body{
+  font-family: 'Noto Sans KR', 'Poppins', sans-serif;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+header .inner,header .inner>*{ /* > 자식선택자를 의미 */
+  /*! border: 1px solid #333; */
+}
+
+header div.inner {
+  display: flex;
+  justify-content: space-between;
+  height: 88px;
+  align-items: center;
+  position: relative;
+  margin-top: 28px;
+}
+header::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #e7e7e7;
+  top: 27px;
+  left: 0;
+  z-index: 1;
+}
+header div.inner h1 {
+  
+}
+header div.inner h1 a {
+  
+  background-image: url(../img/logo-pc.png);
+  width: 142px;
+  height: 35px;
+  display: block;
+  font-size: 0;
+}
+header div.inner ul.gnb {
+   display: flex; 
+   /*! gap: 25px; */
+}
+header div.inner ul.gnb li {
+  
+}
+header div.inner ul.gnb li a {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 30px;
+  display: block;
+/*   line-height: 3; block에만 적용되는 속성 */
+  transition: color 500ms;
+}
+header div.inner ul.gnb li a:hover{
+  color: #e0462e;
+}
+header div.inner ul.enb {
+  display: flex; 
+  gap: 15px;
+}
+header div.inner ul.enb li {
+  
+}
+header div.inner ul.enb li select{
+  background-color: transparent;
+  border: none;
+}
+header div.inner ul.enb li select option{
+
+}
+header div.inner ul.enb li a {
+  
+  font-size: 0;
+  width: 20px;
+  height: 13px;
+  display: flex;
+  border-top: 3px solid #666;
+  border-bottom: 3px solid #666;
+  align-items: center;
+}
+header div.inner ul.enb li a:hover{
+  border-color: #e0462e;
+}
+header div.inner ul.enb li a::before{
+  content:"";
+  height: 3px;
+  width: 100%;
+  background-color: #666;
+}
+header div.inner ul.enb li a:hover::before{
+  background-color: #e0462e;
+}
+header div.inner ul.tnb{
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: -22px;
+  font-size: 12px;
+  gap: 14px;
+}
+header div.inner ul.tnb li{
+
+}
+header div.inner ul.tnb li a{
+  
+}
+header div.inner ul.tnb li a::after{
+  content: "";
+  display: inline-block;
+  background-image: url(../img/open_in_new.svg);
+  background-size: contain;
+  width: 17px;
+  height: 17px;
+  vertical-align: -4px;
+}
+
+

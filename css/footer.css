@@ -1,0 +1,190 @@
+footer {
+    background-color: #1b1b1b;
+    color: rgb(136, 136, 136);
+}
+footer .inner {
+    height: 380px;
+    box-sizing: border-box;
+}
+footer .inner > div {
+
+}
+footer .inner .left {
+
+}
+footer .inner .left h1 a{
+    display: block;
+    font-size: 0;
+    background-image: url(../img/f_logo.png);
+    width: 113px;
+    height: 30px;
+}
+footer .inner .left address {
+    font-size: 17px;
+    transform: translateY(-50px);
+}
+footer .inner .left p {
+    font-size: 14px;
+    color: rgb(75, 75, 75);
+}
+footer .inner .right {
+    align-items: end;
+}
+footer .inner .right ul.personal {
+    gap: 20px;
+}
+footer .inner .right ul.personal li {
+
+}
+footer .inner .right ul.personal li a {
+    font-size: 14px;
+    color: rgb(95, 94, 94);
+    transition: color 500ms;
+}
+footer .inner .right ul.personal li:hover a{
+    color: #fff;
+}
+footer .inner .right .bottom {
+    gap: 50px;
+}
+footer .inner .right .bottom ul.sns {
+    gap: 20px;
+}   
+footer .inner .right .bottom ul.sns li {
+}
+footer .inner .right .bottom ul.sns li a {
+    font-size: 0;
+    box-sizing: border-box;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background: #1b1b1b;
+}
+footer .inner .right .bottom ul.sns li a:after{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 1s;
+}
+footer .inner .right .bottom ul.sns li:nth-child(1) a:after{
+    background-image: url(../img/logo-instagram_w.svg);
+}
+footer .inner .right .bottom ul.sns li:nth-child(2) a:after{
+    background-image: url(../img/logo-youtube_w.svg);
+}
+footer .inner .right .bottom ul.sns li:nth-child(3) a:after{
+    background-image: url(../img/logo-twitter_w.svg);
+}
+footer .inner .right .bottom ul.sns li:hover:nth-child(1) a:after{
+    background-image: url(../img/logo-instagram.svg);
+}
+footer .inner .right .bottom ul.sns li:hover:nth-child(2) a:after{
+    background-image: url(../img/logo-youtube.svg);
+}
+footer .inner .right .bottom ul.sns li:hover:nth-child(3) a:after{
+    background-image: url(../img/logo-twitter.svg);
+}
+footer .inner .right .bottom a{
+    box-shadow: 0 4px 8px 1px rgba(0,0,0,0.5), inset 0 4px 10px 2px rgba(77, 77, 77, 0.1);
+}
+footer .inner .right .bottom > a {
+    width: 355px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 35px;
+    font-size: 0;
+    display: block;
+    font-size: 16px;
+    font-family: 'Poppins';
+    position: relative;
+    transition: color 500ms;
+}
+footer .inner .right .bottom > a:hover{
+    color: #e0462e;
+}
+
+
+footer .inner .right .bottom > a strong{
+    color: #fff;
+}
+footer .inner .right .bottom > a::before{
+    content: "";
+    background-image: url(../img/flag_store.png);
+    width: 64px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 13px;
+}
+footer .inner .right .bottom > a::after{
+    content: "";
+    background-image: url(../img/select_btn01.png);
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(-50%) rotate(-90deg) ;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+}
+/* 사이드 메뉴 */
+aside{
+   position: fixed;
+   right: 20px;
+   bottom: 50px;
+}
+aside span{
+    row-gap: 10px;
+}
+aside span a{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    
+    font-size: 14px;
+    font-family: 'Poppins';
+}
+aside a.shop{
+    background: #fff;
+    box-shadow: 0px 0px 8px rgba(155, 155, 155, 0.3);
+    line-height: 50px;
+}
+aside a.top{
+    font-size: 0;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+aside a.top::before{
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    transform: translateY(50%) rotate(-45deg);
+    transition: all 500ms;
+}
+aside a.top::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 18px;
+    background-color: #fff;
+    transform: translateY(-32%);
+}
+
+aside a.top:hover::before{
+    margin-top: -10px;
+}

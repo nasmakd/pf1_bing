@@ -1,0 +1,205 @@
+body{
+  font-family: 'Noto Sans KR', 'Poppins', sans-serif;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 10; 
+}
+
+header .inner,header .inner>*{ /* > 자식선택자를 의미 */
+  /*! border: 1px solid #333; */
+}
+
+header div.inner {
+  display: flex;
+  justify-content: space-between;
+  height: 88px;
+  align-items: center;
+  position: relative;
+  margin-top: 28px;
+}
+header::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-top: 1px solid #e7e7e7;
+  top: 27px;
+  left: 0;
+  z-index: 15;
+}
+header div.inner h1 {
+  
+}
+header div.inner h1 a {
+  background-image: url(../img/logo-pc.png);
+  width: 142px;
+  height: 35px;
+  display: block;
+  font-size: 0;
+}
+header div.inner ul.gnb {
+   display: flex; 
+   align-self: flex-start;
+   
+}
+
+header div.inner ul.gnb::before{
+  content: "";
+  background-color: #fff;
+  width: 105%;
+  height: 0px;
+  position: absolute; 
+  left: -2.5% ;
+  top: -28px;
+  z-index: -1;
+  transition: all 1000ms;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 10px 10px rgba(173, 173, 173, 0.2)
+}
+header div.inner ul.gnb:hover::before{
+  height: 450px;
+}
+header div.inner ul.gnb::after{
+  content: "";
+  width: 105%;
+  border-bottom: 1px solid transparent;
+  position: absolute;
+  left: -2.5%;
+  top: 88px;
+  transition: all 500ms;
+}
+header div.inner ul.gnb:hover::after{
+  border-bottom-color: #e7e7e7;
+}
+
+header div.inner ul.gnb > li {
+  
+}
+
+header div.inner ul.gnb li > h2 a {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 30px;
+  display: block;
+  /* line-height: 3; block에만 적용되는 속성 */
+  transition: color 500ms;
+  padding-top: 35px;
+  position: relative;
+}
+header div.inner ul.gnb > li:hover > h2 a{
+  color: #e0462e;
+}
+header div.inner ul.gnb li > h2 a::after{
+  content: "";
+  display: block;
+  width: calc(100% - 60px);
+  border-bottom: 2px solid #e0462e;
+  position: absolute;
+  bottom: -13px;
+  left: 30px;
+  transition: all 500ms;
+  transform-origin: 50%;
+  transform: scaleX(0);
+}
+header div.inner ul.gnb li:hover > h2 a::after{
+  transform: scaleX(1);
+}
+/* gnb 서브 메뉴 */
+header div.inner ul.gnb li ul.gnbsub{
+  display: none;
+  padding-top: 20px;
+}
+header div.inner ul.gnb:hover > li ul.gnbsub{
+  opacity: 0;
+  display: block;
+  animation-name: gnbFadeIn;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-delay: 1000ms
+}
+
+@keyframes gnbFadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+header div.inner ul.gnb li ul.gnbsub li{
+  
+}
+header div.inner ul.gnb li ul.gnbsub li a{
+  display: block;
+  font-size: 17px;
+  padding-left: 30px;
+  padding-right: 10px;
+  line-height: 2;
+  transition: color 500ms;
+}
+header div.inner ul.gnb li ul.gnbsub li a:hover{
+  color: #e0462e;
+}
+header div.inner ul.enb {
+  display: flex; 
+  gap: 15px;
+}
+header div.inner ul.enb li {
+  
+}
+header div.inner ul.enb li select{
+  background-color: transparent;
+  border: none;
+}
+header div.inner ul.enb li select option{
+
+}
+header div.inner ul.enb li a {
+  
+  font-size: 0;
+  width: 20px;
+  height: 13px;
+  display: flex;
+  border-top: 3px solid #666;
+  border-bottom: 3px solid #666;
+  align-items: center;
+}
+header div.inner ul.enb li a:hover{
+  border-color: #e0462e;
+}
+header div.inner ul.enb li a::before{
+  content:"";
+  height: 3px;
+  width: 100%;
+  background-color: #666;
+}
+header div.inner ul.enb li a:hover::before{
+  background-color: #e0462e;
+}
+header div.inner ul.tnb{
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: -22px;
+  font-size: 12px;
+  gap: 14px;
+}
+header div.inner ul.tnb li{
+
+}
+header div.inner ul.tnb li a{
+  
+}
+header div.inner ul.tnb li a::after{
+  content: "";
+  display: inline-block;
+  background-image: url(../img/open_in_new.svg);
+  background-size: contain;
+  width: 17px;
+  height: 17px;
+  vertical-align: -4px;
+}
+
+

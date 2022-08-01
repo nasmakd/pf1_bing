@@ -1,0 +1,171 @@
+#title {
+  /* height: 100%; */
+  background-image:url(../img/section01_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+/* 부모요소에 flex를 적용한 경우 자식요소는 block요소를 갖는다. */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px;
+  padding-bottom: 200px;
+  position: relative;
+}
+
+#title::before{
+  content: "";
+  background-image: url(../img/sec01_logo.png);
+  background-size: cover;
+  width: 1508px;
+  height: 388px;
+  margin-top: 160px;
+  margin-bottom: 30px; 
+  animation-name: fadeIn; /* 애니메이션 이름 */
+  animation-duration: 3000ms; /* 애니메이션 시간 */
+  /*animation-iteration-count: 3; 애니메이션 반복 횟수 */
+  /*animation-direction: alternate; 애니메이션 진행 방향: 왔다갔다 */
+}
+@keyframes fadeIn {
+   0%{/* 처음 상태 */
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  70%{
+    transform: scale(1.2);
+  }
+   100%{/* 끝 상태 */
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+#title form.search {
+  background-color: #fff;
+  border-radius: 40px;
+  width: 55%;
+  height: 80px;
+  box-shadow: 2px 0 10px #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+  padding-left: 70px;
+  box-sizing: border-box;
+  position: relative;
+  animation-name: moveLeft;
+  animation-duration: 1000ms;
+  transform: translateX(70px);
+  animation-delay: 2000ms;
+  animation-fill-mode: forwards;
+  /*animation-iteration-count: 2;
+  animation-direction: alternate;*/
+}
+@keyframes moveLeft {
+  0%{
+    transform: translateX(70px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+#title form.search::before{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/search.svg);
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+}
+#title form.search input {
+
+  background-color: transparent;
+  border: none;
+  line-height: 1.6;
+  font-size: 17px;
+  width: 70%;
+  font-family: inherit;
+}
+#title form.search input::placeholder{
+  color: #aaa;
+}
+#title form.search input:focus{
+    outline: none;
+}
+#title form.search button {
+
+  background-color: #e0462e;
+  border: none;
+  font-family: inherit;
+  color: #fff;
+  border-radius: 30px;
+  width: 20%;
+  line-height: 3.2;
+  box-shadow: inset 0px 5px 10px 0 rgba(53, 53, 53, 0.11);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+}
+#title h2 {
+
+}
+#title ul.hash {
+
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+  column-gap: 40px;
+}
+#title ul.hash li {
+
+  
+}
+#title ul.hash li a {
+  font-family: "Binggrae";
+  display: block;
+  border: 1px solid #e7e7e7;
+  padding: 10px 20px;
+  border-radius: 19px;
+  font-size: 12px;
+  transition: color 500ms;
+}
+#title ul.hash li a:hover{
+  color:  #e0462e;
+}
+#title span{
+  position: absolute;
+  bottom: 5%;
+}
+
+#title span::before{
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  border: 2px solid #aaa;
+  margin: 0 auto;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  margin-bottom: 10px;
+  animation-name: scroll;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  animation-direction: alternate;
+}
+@keyframes scroll {
+  0%{
+    transform:translateY(0) rotate(45deg) ;
+  }
+  100%{
+    transform:translateY(-10px) rotate(45deg) ;
+  }
+}
+#title span::after{
+  content: "Scroll";
+  color: #aaa;
+}
