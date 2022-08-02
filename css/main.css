@@ -21,7 +21,7 @@ main{
 }
  #taste div.inner ul.list li {
   /*! border: 1px solid #000; */
-  width: calc((100% / 6) - (50px / 6));
+  width: calc((100% / 6) - (100px / 6));
   box-sizing: border-box;
   transition: transform 500ms;
 }
@@ -319,7 +319,7 @@ main{
 }
 #community .inner > div article ul li a {
   display: flex;
-  padding: 0 20px;
+  padding: 5px 20px;
   justify-content: space-between;
   align-items: center;
   font-size: 17px;

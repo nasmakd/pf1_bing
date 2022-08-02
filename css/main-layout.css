@@ -1,4 +1,22 @@
+h1{
+  
+  text-align: center;
+}
+h1 img{
+  
+  max-width: 100%;
+}
 
+div.img{
+  
+  border: 3px solid black;
+  width: 1000px;
+}
+div.img img{
+  
+  border: 3px solid teal;
+  max-width: 100%;
+}
 /* 빙그레맛 */
 #taste {
     

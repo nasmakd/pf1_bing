@@ -146,4 +146,8 @@
     #community .inner > div article.telephone > a{
         font-size: 35px;
     }
+
+    footer .inner{
+        padding: 50px 0;
+    }
 }
