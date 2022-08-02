@@ -150,4 +150,12 @@
     footer .inner{
         padding: 50px 0;
     }
+    footer .inner .right .bottom > a{
+        width: auto;
+        padding: 0 10px;
+    }
+    footer .inner .right .bottom > a::after{
+        display: none;
+    }
+
 }
